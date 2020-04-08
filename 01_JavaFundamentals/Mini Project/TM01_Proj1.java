@@ -1,4 +1,4 @@
-class Project1
+class TM01_Proj1
 {
 	static int empIDList[] = {1001, 1002, 1003, 1004, 1005, 1006, 1007};
 	static String empNameList[] = {"Ashish", "Shushma", "Rahul", "Chahat", "Ranjan", "Suman", "Tanmay"};
