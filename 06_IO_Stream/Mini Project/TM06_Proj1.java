@@ -101,25 +101,25 @@ class TM06_Proj1
 				choice = showOptions(scanner);
 				switch (choice)
 				{
-					case 1: System.out.print("Enter Employee ID: ");		empID = scanner.next();
-							System.out.print("Enter Employee Name: ");		empName = scanner.next();
-							System.out.print("Enter Employee Age: ");		empAge = scanner.nextInt();
-							System.out.print("Enter Employee Salary: ");	empSalary = scanner.nextDouble();
-							employee = new Employee(empID, empName, empAge, empSalary);
-							serilizeObject(employee, storageDirectory, "EmployeeFile", indexCounter++);
-							employee = null;
-							break;
+					case 1: System.out.print("Enter Employee ID: ");	empID = scanner.next();
+						System.out.print("Enter Employee Name: ");	empName = scanner.next();
+						System.out.print("Enter Employee Age: ");	empAge = scanner.nextInt();
+						System.out.print("Enter Employee Salary: ");	empSalary = scanner.nextDouble();
+						employee = new Employee(empID, empName, empAge, empSalary);
+						serilizeObject(employee, storageDirectory, "EmployeeFile", indexCounter++);
+						employee = null;
+						break;
 
 					case 2: System.out.println("-----Report-----");
-							displayAll(storageDirectory);
-							System.out.println("-----End of Report-----");
-							break;
+						displayAll(storageDirectory);
+						System.out.println("-----End of Report-----");
+						break;
 
 					case 3: System.out.println("Exiting the System...");
-							break;
+						break;
 
 					default:System.out.println("Invalid choice! Please try again.");
-							break;
+						break;
 				}
 			}
 		}
